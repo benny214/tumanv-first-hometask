@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('firasans-book.eot');
+    src: url('firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('firasans-book.woff') format('woff'),
+         url('firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sanslight';
+    src: url('firasans-light.eot');
+    src: url('firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('firasans-light.woff') format('woff'),
+         url('firasans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('firasans-medium.eot');
+    src: url('firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('firasans-medium.woff') format('woff'),
+         url('firasans-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+button,
+input{
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  background:url(../img/bg.png);
+}
+.header-container{
+  background: #eff3f7;
+  width:100%;
+}
+header{
+  background: #eff3f7;
+  max-width: 1200px;
+  margin:0 auto;
+  padding:30px;
+}
+.header-logo{
+  float: left;
+}
+.header-social{
+  float: right;
+}
+.header-social .social-icon{
+  display: inline-block;
+  margin-right: 20px;
+}
+.header-social .social-icon a{
+  background: url(http://s5.postimg.org/riz7mjgzb/sprites.png) no-repeat;
+}
+.header-social .vk a{
+  background-position: 0 0;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+}
+.header-social .vk a:hover{
+  background-position: 0 -50px ;
+  width: 46px;
+  height: 46px;
+}
+.header-social .fb a{
+  background-position: -50px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+.header-social .fb a:hover{
+  background-position: -50px -50px ;
+  width: 47px;
+  height: 47px;
+}
+.header-social .tw a{
+  background-position: -100px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+.header-social .tw a:hover{
+  background-position: -100px -50px ;
+  width: 47px;
+  height: 47px;
+}
+.header-social .gh a{
+  background-position: -150px 0;
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+}
+.header-social .gh a:hover{
+  background-position: -150px -50px ;
+  width: 47px;
+  height: 47px;
+} 
+.border{
+  width: 100%;
+  height: 3px;
+  background-color: #1C667A;
+  background-image: -moz-linear-gradient(left, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  background-image: -o-linear-gradient(left, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  background-image: -webkit-linear-gradient(left, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+  background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
+} 
+.main-container {
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
