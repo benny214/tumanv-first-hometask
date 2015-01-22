@@ -565,4 +565,23 @@ button {
   font-size: 19px;
   padding: 10px 22px;
 }
+<<<<<<< HEAD
 
+=======
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+.clearfix: before,
+.clearfix: after {
+  content:" ";
+  display:table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+>>>>>>> 34dd278571367e199955a76739993e39868a2add
