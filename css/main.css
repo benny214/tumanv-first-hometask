@@ -26,6 +26,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 html,
 button,
 input {
@@ -550,26 +565,4 @@ button {
   font-size: 19px;
   padding: 10px 22px;
 }
-/* ==========================================================================
-Media Queries
-========================================================================== */
 
-@media only screen and (min-width: 35em) {}@media print,
-(-o-min-device-pixel-ratio: 5/4),
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 120dpi) {}
-/* ==========================================================================
-Helper classes
-========================================================================== */
-
-.clearfix: before,
-.clearfix: after {
-  content:" ";
-  display:table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  *zoom: 1;
-}
