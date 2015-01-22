@@ -274,6 +274,7 @@ section {
   width: 650px;
   background: #eff3f7;
   margin-bottom: 24px;
+  border-radius: 4px;
 }
 h1 {
   color: #3BA8C0;
@@ -353,10 +354,202 @@ footer p {
 Мои работы
 ========================================================================== */
 
+.works ul {
+  padding-top: 34px;
+}
+.works li {
+  float: left;
+  text-align: center;
+  margin-left: 85px;
+}
+.works li img {
+  border-radius: 4px;
+  border: 2px solid #3ba8c0;
+}
+.add-new {
+  margin-bottom: 267px
+}
+.add-new a img {
+  border: none;
+}
+.works p a {
+  font-family: 'fira_sanslight';
+  text-decoration: none;
+  font-style: italic;
+}
+.works p {
+  margin-bottom: 33px
+}
+.works .mask {
+  opacity: 0;
+  background-color: rgba(115, 146, 184, 0.7);
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 261px;
+  border-radius: 4px;
+}
+.first {
+  padding: 67px 54px 62px 60px;
+}
+.second {
+  padding: 67px 70px 62px 69px;
+}
+.works .mask:hover {
+  transition: 300ms ease-in;
+  opacity: 1;
+}
+.mask a {
+  border-radius: 4px;
+  border: solid 1px #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0px 4px 0 4px;
+}
 /* ==========================================================================
 Обратная связь
 ========================================================================== */
 
+.feedback {
+  padding-bottom: 185px;
+}
+.feedback__header {
+  font-size: 27px;
+  color: #fff;
+  border-bottom: 17px solid #67DFFA;
+  text-align: center;
+  padding: 51px 0;
+  font-family: 'fira_sansbook';
+  font-weight: 300;
+  background: #3ba8c0;
+  margin-top: 0;
+}
+.form__all {
+  padding-left: 123px;
+  padding-top: 18px;
+}
+.form__all-line {
+  display: inline-block;
+  position: relative;
+}
+.form__all-line img {
+  margin-left: 20px;
+}
+.form__all-input,
+textarea {
+  border: 1px solid #3ba8c0;
+  border-radius: 4px;
+  margin-left: 18px;
+  padding-left: 9px;
+  padding: 16px 20px 18px 9px;
+}
+.label-top {
+  position: absolute;
+  top: -23px;
+  left: 20px;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #3ba8c0;
+  font-family: 'fira_sanslight';
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #3ba8c0;
+  font-family: 'fira_sanslight';
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #3ba8c0;
+  font-family: 'fira_sanslight';
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #3ba8c0;
+  font-family: 'fira_sanslight';
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.message {
+  margin-bottom: 91px;
+}
+.label-message {
+  top: 25px;
+}
+.form__all textarea {
+  top: 48px;
+  position: relative;
+}
+.textarea-ph {
+  position: relative;
+  top: -167px;
+  left: 26px;
+}
+.captcha__placeholder {
+  position: relative;
+  top: -65px;
+  left: 204px;
+  color: #3ba8c0;
+  font-family: 'fira_sanslight';
+}
+.submit {
+  display: block;
+  margin-left: 30px;
+  margin-top: 59px;
+}
+button {
+  color: #fff;
+  border: 1px solid transparent;
+}
+.feedback__form-send {
+  margin-right: 122px;
+}
+.feedback__form-send,
+.feedback__form-send:hover,
+.feedback__form-send:focus,
+.feedback__form-send:active {
+  background: #48CBE8;
+  border-radius: 5px;
+  border-bottom: 2px solid #3BA8C0;
+  font-size: 19px;
+  padding: 10px 22px;
+}
+.feedback__form-clear,
+.feedback__form-clear:hover,
+.feedback__form-clear:focus,
+.feedback__form-clear:active {
+  background: #849DB5;
+  border-radius: 5px;
+  border-bottom: 2px solid #687B8F;
+  font-size: 19px;
+  padding: 10px 22px;
+}
 /* ==========================================================================
 Media Queries
 ========================================================================== */
@@ -369,13 +562,10 @@ Media Queries
 Helper classes
 ========================================================================== */
 
-.invisible {
-  visibility:hidden;
-}
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+.clearfix: before,
+.clearfix: after {
+  content:" ";
+  display:table;
 }
 .clearfix:after {
   clear: both;

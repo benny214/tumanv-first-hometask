@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+
+	<!-- шапка сайта -->
+	<div class="header-container">
+		<header class="wrapper clearfix">
+			<div class="header-logo">
+				<a href="/">
+					<img src="img/logo.png" height="57" width="245" alt="Логотип">
+				</a>
+			</div>
+			<div class="header-social">
+				<ul class="header-social__list">
+					<li class="header-social__icon vk">
+						<a title="Вконтакте" href="http://vk.com/benny214" target="_blank"></a>
+					</li>
+					<li class="header-social__icon fb">
+						<a title="Facebook" href="https://www.facebook.com/benny.moralez.5" target="_blank"></a>
+					</li>
+					<li class="header-social__icon tw">
+						<a title="Twitter" href="https://twitter.com/ebola214" target="_blank"></a>
+					</li>
+					<li class="header-social__icon gh">
+						<a title="GitHub" href="https://github.com/benny214" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="border"></div>
+	</div>
+
+	<!-- меню -->
+
+	<div class="main-container">
+		<div class="main-wrapper clearfix">
+
+			<aside class="sidebar">
+				<nav class="sidebar-main__nav">
+					<ul class="sidebar-main__navlist">
+						<li class="sidebar-navlist__about">
+							<a href="index.html" class="underline">Обо мне</a>
+						</li>
+						<li class="sidebar-navlist__works">
+							<a href="works.html">Мои работы</a>
+						</li>
+						<li class="sidebar-navlist__feedback">
+							<a href="feedback.html" class="current">Связаться со мной</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="sidebar-contacts">
+					<ul>
+						<li class="sidebar-contacts__header">Контакты</li>
+						<li class="sidebar-contacts__mail">
+							<i class="icon-mail"></i>
+							<a href="mailto:benny.moralez@gmail.com">benny.moralez@gmail.com</a>
+						</li>
+						<li class="sidebar-contacts__tel">
+							<i class="icon-phone"></i>
+							<a href="tel:+79057274650">+79057274650</a>
+						</li>
+						<li class="sidebar-contacts__skype">
+							<i class="icon-skype"></i>
+							<a href="skype:benny.mrlz">benny.mrlz</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<!-- мои работы -->
+
+			<div class="content-wrapper">
+
+				<section class="feedback">
+					<h2 class="feedback__header">У вас интересный проект? Напишите мне</h2>
+					<form action class="feedback__form" method="post">
+						<ul class="form__all">
+							<li class="form__all-line">
+								<label for="your-name" class="form__all-label label-top">Имя</label>
+								<input type="text" class="form__all-input" id="contact-name" name="name" placeholder="Как к вам обращаться?">
+							</li>
+							<li class="form__all-line">
+								<label for="your-mail" class="form__all-label label-top">Email</label>
+								<input type="text" class="form__all-input" id="contact-mail" name="mail" placeholder="Куда мне писать?">
+							</li>
+							<li class="form__all-line message">
+								<label for="your-message" class="form__all-label label-top label-message">Сообщение</label>
+								<textarea name="contact-message" id="contact-message" cols="54" rows="10" placeholder="Кратко в чем суть?"></textarea>
+							</li>
+							<li class="form__all-line">
+								<label for="captcha" class="form__all-label label-top">Введите код указанный на картинке</label>
+								<img src="img/capcha.png" height="79" width="191" alt="">
+								<input type="text" class="form__all-input" id="captcha" name="captcha" placeholder="Введите код">
+							</li>
+							<li class="form__all-line submit">
+								<button type="submit" class="feedback__form-send">Отправить</button>
+								<button class="feedback__form-clear">Очистить</button>
+							</li>
+						</ul>
+					</form>
+				</section>
+
+			</div>
+
+		</div>
+		<!-- #main-wrapper -->
+	</div>
+	<!-- #main-container -->
+
+	<!--подвал-->
+
+	<div class="footer-container">
+		<div class="border"></div>
+		<footer>
+			<a href="#"></a>
+			<p>© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+		</footer>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
+	</script>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
