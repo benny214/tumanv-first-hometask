@@ -7,6 +7,7 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ДЗ 1</title>
 
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -19,23 +20,23 @@
 	<!-- шапка сайта -->
 	<div class="header-container">
 		<header class="wrapper clearfix">
-			<div class="header-logo">
+			<div class="header__logo">
 				<a href="/">
 					<img src="img/logo.png" height="57" width="245" alt="Логотип">
 				</a>
 			</div>
-			<div class="header-social">
-				<ul class="header-social__list">
-					<li class="header-social__icon vk">
+			<div class="header__social">
+				<ul class="header__social-list">
+					<li class="header__social-icon vk">
 						<a title="Вконтакте" href="http://vk.com/benny214" target="_blank"></a>
 					</li>
-					<li class="header-social__icon fb">
+					<li class="header__social-icon fb">
 						<a title="Facebook" href="https://www.facebook.com/benny.moralez.5" target="_blank"></a>
 					</li>
-					<li class="header-social__icon tw">
+					<li class="header__social-icon tw">
 						<a title="Twitter" href="https://twitter.com/ebola214" target="_blank"></a>
 					</li>
-					<li class="header-social__icon gh">
+					<li class="header__social-icon gh">
 						<a title="GitHub" href="https://github.com/benny214" target="_blank"></a>
 					</li>
 				</ul>
@@ -50,32 +51,32 @@
 		<div class="main-wrapper clearfix">
 
 			<aside class="sidebar">
-				<nav class="sidebar-main__nav">
-					<ul class="sidebar-main__navlist">
-						<li class="sidebar-navlist__about">
-							<a href="index.html" class="current">Обо мне</a>
+				<nav class="sidebar__main-nav">
+					<ul class="sidebar__main-navlist">
+						<li class="sidebar-navlist__about current">
+							<a href="index.html" class="sidebar-navlist__me ">Обо мне</a>
 						</li>
-						<li class="sidebar-navlist__works">
-							<a href="works.html" class="underline">Мои работы</a>
+						<li class="sidebar__navlist-works underline">
+							<a href="works.html" class="sidebar-navlist__works ">Мои работы</a>
 						</li>
-						<li class="sidebar-navlist__feedback">
-							<a href="feedback.html">Связаться со мной</a>
+						<li class="sidebar__navlist-feedback calm">
+							<a href="feedback.html" class="sidebar-navlist__feed">Связаться со мной</a>
 						</li>
 					</ul>
 				</nav>
 
-				<div class="sidebar-contacts">
+				<div class="sidebar__contacts">
 					<ul>
-						<li class="sidebar-contacts__header">Контакты</li>
-						<li class="sidebar-contacts__mail">
+						<li class="sidebar__contacts-header">Контакты</li>
+						<li class="sidebar__contacts-mail">
 							<i class="icon-mail"></i>
 							<a href="mailto:benny.moralez@gmail.com">benny.moralez@gmail.com</a>
 						</li>
-						<li class="sidebar-contacts__tel">
+						<li class="sidebar__contacts-tel">
 							<i class="icon-phone"></i>
 							<a href="tel:+79057274650">+79057274650</a>
 						</li>
-						<li class="sidebar-contacts__skype">
+						<li class="sidebar__contacts-skype">
 							<i class="icon-skype"></i>
 							<a href="skype:benny.mrlz">benny.mrlz</a>
 						</li>
@@ -87,30 +88,30 @@
 
 			<div class="content-wrapper">
 				<section class="about clearfix">
-					<h1>
+					<h2>
 							<span class="info">Основная информация</span>
-						</h1>
+						</h2>
 					<img src="img/main-pic.png" alt="#">
-					<ul>
-						<li>
-							<span class="about-bold">Меня зовут:</span>&nbsp;Туманов Виктор Алексеевич
+					<ul class="info__list">
+						<li class="info__list-name">
+							<span class="about__bold">Меня зовут:</span>&nbsp;Туманов Виктор Алексеевич
 						</li>
-						<li>
-							<span class="about-bold">Мой возраст:</span>&nbsp;29 лет
+						<li class="info__list-age">
+							<span class="about__bold">Мой возраст:</span>&nbsp;29 лет
 						</li>
-						<li>
-							<span class="about-bold">Мой город:</span>&nbsp;Подольск, Россия
+						<li class="info__list-city">
+							<span class="about__bold">Мой город:</span>&nbsp;Подольск, Россия
 						</li>
-						<li>
-							<span class="about-bold">Моя специализация:</span>&nbsp;FRONTEND разработчик
+						<li class="info__list-spec">
+							<span class="about__bold">Моя специализация:</span>&nbsp;FRONTEND разработчик
 						</li>
-						<li><span class="about-bold">Ключевые навыки:</span>
-							<ul class="about-skils">
-								<li>html</li>
-								<li>css</li>
-								<li>javascript</li>
-								<li>gulp</li>
-								<li>git</li>
+						<li><span class="about__bold">Ключевые навыки:</span>
+							<ul class="about__skils">
+								<li class="about__skils-pils">html</li>
+								<li class="about__skils-pils">css</li>
+								<li class="about__skils-pils">javascript</li>
+								<li class="about__skils-pils">gulp</li>
+								<li class="about__skils-pils">git</li>
 							</ul>
 						</li>
 					</ul>
@@ -119,15 +120,15 @@
 				<!-- опыт работы -->
 
 				<section class="experience">
-					<h1>
+					<h2>
 							<span class="info">Опыт работы</span>
-						</h1>
-					<ul>
-						<li>
+						</h2>
+					<ul class="experience__list">
+						<li class="experience__list-item">
 							<i class="icon-suitcase"></i> ETB-Lab - HTML- верстальщик
 							<br><span class="date">Сентябрь 2014 — январь 2015</span>
 						</li>
-						<li>
+						<li class="experience__list-item">
 							<i class="icon-suitcase"></i>ООО Дирс - WEB-мастер
 							<br><span class="date">Июнь 2014 — сентябрь 2014</span>
 						</li>
@@ -137,15 +138,15 @@
 				<!-- образование -->
 
 				<section class="education">
-					<h1>
+					<h2>
 							<span class="info">Образование</span>
-						</h1>
-					<ul>
-						<li>
+						</h2>
+					<ul class="education__list">
+						<li class="education__list-item">
 							<i class="icon-graduation-cap"></i> Незаконченное высшее РГУТиС
 							<br><span class="date">2009</span>
 						</li>
-						<li>
+						<li class="education__list-item">
 							<i class="icon-doc-text"></i> Курсы Loftschool.ru
 							<br><span class="date"> январь 2015</span>
 						</li>
