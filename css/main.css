@@ -60,6 +60,7 @@ body {
 }
 img {
   vertical-align: middle;
+  border: none;
 }
 ul {
   margin: 0;
@@ -387,12 +388,12 @@ footer p {
   text-align: center;
   margin-left: 85px;
 }
-.works li img {
-  border-radius: 4px;
+.border__img {
   border: 2px solid #3ba8c0;
+  border-radius: 4px;
 }
 .add-new {
-  margin-bottom: 267px
+  margin-bottom: 267px;
   margin-left: 83px;
 }
 .add-new a img {
@@ -407,13 +408,13 @@ footer p {
   margin-bottom: 33px
 }
 .works .mask {
-  opacity:0;
   background-color: rgba(115, 146, 184, 0.7);
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 312px;
+  top: 262px;
   border-radius: 4px;
+  opacity: 0;
 }
 .first {
   padding: 67px 54px 62px 60px;
@@ -524,6 +525,9 @@ footer p {
 }
 .popup__form-textarea {
   margin-top: 0;
+}
+.popup__form-item>.feedback__form-send{
+  margin-left: 122px;
 }
 /* ==========================================================================
 Обратная связь
@@ -711,4 +715,12 @@ Helper classes
 }
 .clearfix {
   *zoom: 1;
+}
+
+.popup__img-add {
+  position: relative;
+  display: block;
+  bottom: 33px;
+  border: none;
+  left: 294px;
 }
