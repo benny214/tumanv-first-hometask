@@ -92,7 +92,7 @@
 							<span class="info">Мои работы</span>
 						</h1>
 					<ul class="clearfix">
-						<li>
+						<li class="works__item">
 							<img src="img/haoCha.jpg" height="148" width="200" alt="">
 							<div class="mask first">
 								<a href="#" target="_blank">hao-cha.ru</a>
@@ -102,7 +102,7 @@
 								<br>Интернет-магазин чая
 							</p>
 						</li>
-						<li>
+						<li class="works__item">
 							<img src="img/dummy.jpg" height="148" width="200" alt="">
 							<div class="mask second">
 								<a href="http://tea-geek.tk/shablon/" target="_blank">dummy</a>
@@ -113,10 +113,42 @@
 							</p>
 						</li>
 						<li class="add-new">
-							<a href="#" id="go">
+							<a href="#" class="open_popup" rel="popup1">
 								<img src="img/pic.png" alt="">
 							</a>
+							<!--заливка-->
+							<div class="overlay"></div>
 
+							<!--попап форма-->
+							<div class="popup" id="popup1">
+								<span class="close">x</span>
+								<h2 class="popup__header">Добавление проекта</h2>
+								<form class="popup__form">
+									<ul>
+										<li class="popup__form-item">
+											<label for="project-name" class="popup__form-label">Название проекта</label>
+											<input type="text" class="popup__form-input" placeholder="Введите название">
+										</li>
+										<li class="popup__form-item">
+											<label for="project-img" class="popup__form-label">Картинка проекта</label>
+											<input type="text" class="popup__form-input form__img-input" placeholder="Загрузите изображение">
+											<input type="button" class="form__img-btn">
+										</li>
+										<li class="popup__form-item">
+											<label for="project-url" class="popup__form-label">URL проекта</label>
+										<input type="text" class="popup__form-input" placeholder="добавьте ссылку">
+									</li>
+										<li class="popup__form-item">
+											<label for="description" class="popup__form-label">Описание</label>
+											<textarea name="text" id="" class="popup__form-input popup__form-textarea" placeholder="Пара слов о Вашем проекте" cols="30" rows="5"></textarea>
+									</li>
+										<li class="popup__form-item">
+											<button type="submit" class="feedback__form-send">Добавить</button>
+										</li>
+									</ul>
+								</form>
+							</div>
+							
 						</li>
 					</ul>
 				</section>

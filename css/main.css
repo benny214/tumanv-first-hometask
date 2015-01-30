@@ -26,21 +26,17 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
-
 .clearfix:after {
   clear: both;
 }
-
 .clearfix {
   *zoom: 1;
 }
-
 html,
 button,
 input {
@@ -50,7 +46,8 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 ::-moz-selection {
@@ -180,47 +177,48 @@ header {
 .sidebar {
   float: left;
 }
-.sidebar__contacts, 
+.sidebar__contacts,
 .sidebar__main-nav {
   width: 250px;
 }
-.current a{
+.current a {
   background: #3ba8c0;
-color: #fff;
-text-decoration: none;
-font-size: 20px;
-padding: 22px 26px 19px;
-display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 22px 26px 19px;
+  display: block;
 }
 .current a:hover {
   background: #3ba8c0;
   color: #fff;
 }
-.underline a{
+.underline a {
   color: #959aa8;
-background: #eff3f7;
-border-bottom: 2px solid #3ba8c0;
-text-decoration: none;
-font-size: 21px;
-padding: 24px 27px 16px;
-display: block;
+  background: #eff3f7;
+  border-bottom: 2px solid #3ba8c0;
+  text-decoration: none;
+  font-size: 21px;
+  padding: 24px 27px 16px;
+  display: block;
 }
-.calm a{
+.calm a {
   color: #959aa8;
-background: #eff3f7;
-text-decoration: none;
-font-size: 20px;
-padding: 22px 29px 27px;
-display: block;
+  background: #eff3f7;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 22px 29px 27px;
+  display: block;
 }
-.sidebar-navlist__me{
-  border-radius:4px 4px 0 0;
+.sidebar-navlist__me {
+  border-radius: 4px 4px 0 0;
 }
-.sidebar-navlist__feed{
+.sidebar-navlist__feed {
   border-radius: 0 0 4px 4px;
   margin-bottom: 19px;
 }
-.calm a:hover, .underline a:hover {
+.calm a:hover,
+.underline a:hover {
   color: #3ba8c0;
 }
 .sidebar__contacts a {
@@ -233,14 +231,14 @@ display: block;
 }
 .sidebar__contacts-header {
   background: #3ba8c0;
-color: #fff;
-padding: 9px 21px 9px;
-border-radius: 4px 4px 0 0;
-font-size: 20px;
+  color: #fff;
+  padding: 9px 21px 9px;
+  border-radius: 4px 4px 0 0;
+  font-size: 20px;
 }
 .sidebar__contacts-mail {
   background: #41b9d4;
-padding: 6px 0 6px 11px;
+  padding: 6px 0 6px 11px;
 }
 .sidebar__contacts-tel {
   background: #48cbe8;
@@ -309,16 +307,16 @@ h2 {
 }
 .info {
   border-bottom: 2px solid #3BA8C0;
-padding: 14px 22px 14px 19px;
-display: inline-block;
+  padding: 14px 22px 14px 19px;
+  display: inline-block;
 }
 .footer-container {
   background: #eff3f7;
 }
 footer p {
-margin-top: 30px;
-text-align: center;
-font-size: 13px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
 }
 /* ==========================================================================
 Главная страница
@@ -384,7 +382,7 @@ font-size: 13px;
 .works ul {
   padding-top: 34px;
 }
-.works li {
+.works__item {
   float: left;
   text-align: center;
   margin-left: 85px;
@@ -395,6 +393,7 @@ font-size: 13px;
 }
 .add-new {
   margin-bottom: 267px
+  margin-left: 83px;
 }
 .add-new a img {
   border: none;
@@ -408,12 +407,12 @@ font-size: 13px;
   margin-bottom: 33px
 }
 .works .mask {
-  opacity: 0;
+  opacity:0;
   background-color: rgba(115, 146, 184, 0.7);
   position: absolute;
   text-align: center;
   color: #fff;
-  top: 261px;
+  top: 312px;
   border-radius: 4px;
 }
 .first {
@@ -433,6 +432,99 @@ font-size: 13px;
   text-decoration: none;
   padding: 0px 4px 0 4px;
 }
+.overlay {
+  display:none;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #818e9b;
+}
+.popup {
+  display:none;
+  position: fixed;
+  background: #fff;
+  width: 362px;
+  height: 494px;
+  top: 27%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  z-index: 1000;
+  border-radius: 4px;
+  -moz-box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
+  -webkit-box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
+  box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
+  font-family: 'fira_sansbook';
+}
+.close {
+  display: block;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  font-family: 'fira_sansbook';
+}
+.popup__header {
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 9px solid #67DFFA;
+  background: #3ba8c0;
+  margin: 0;
+  color: #fff;
+  font-family: 'fira_sansbook';
+  text-align: left;
+  padding: 10px;
+}
+.popup__form-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.popup__form-label {
+  position: absolute;
+  top: -21px;
+  font-size: 18px;
+  left: 22px;
+  color: #959AA8;
+}
+.popup__form-input {
+  border: 1px solid #3ba8c0;
+  border-radius: 4px;
+  margin-left: 21px;
+  padding: 10px 0px 9px 0px;
+  width: 320px;
+}
+.form__img-btn {
+  border: none;
+  height: 39px;
+  position: relative;
+  top: 13px;
+  left: -10px;
+  border-radius: 0 4px 4px 0;
+  background-image: url(../img/img-add.png);
+  background: #48cbe8;
+  width: 53px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form__img-input {
+  width: 267px;
+}
+.popup__form-textarea {
+  margin-top: 0;
+}
 /* ==========================================================================
 Обратная связь
 ========================================================================== */
@@ -441,15 +533,15 @@ font-size: 13px;
   padding-bottom: 185px;
 }
 .feedback__header {
-font-size: 27px;
-color: #fff;
-border-bottom: 17px solid #67DFFA;
-text-align: center;
-padding: 43px 0px;
-font-family: 'fira_sansbook';
-font-weight: 300;
-background: #3ba8c0;
-margin-top: 0;
+  font-size: 27px;
+  color: #fff;
+  border-bottom: 17px solid #67DFFA;
+  text-align: center;
+  padding: 43px 0px;
+  font-family: 'fira_sansbook';
+  font-weight: 300;
+  background: #3ba8c0;
+  margin-top: 0;
 }
 .form__all {
   padding-left: 123px;
@@ -459,7 +551,7 @@ margin-top: 0;
   display: inline-block;
   position: relative;
 }
-.form__all .form__all-line:first-child{
+.form__all .form__all-line:first-child {
   margin-right: 6px;
 }
 .form__all-line img {
@@ -468,15 +560,15 @@ margin-top: 0;
 .form__all-input,
 textarea {
   border: 1px solid #3ba8c0;
-border-radius: 4px;
-margin-left: 1px;
-margin-top: 49px;
-padding: 10px 0px 9px 0px;
+  border-radius: 4px;
+  margin-left: 1px;
+  margin-top: 49px;
+  padding: 10px 0px 9px 0px;
 }
 .label-top {
-position: absolute;
-top: 20px;
-font-size: 18px;
+  position: absolute;
+  top: 20px;
+  font-size: 18px;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -532,7 +624,7 @@ textarea:focus:-ms-input-placeholder {
 }
 .label-captcha {
   top: 5px;
-font-size: 17px;
+  font-size: 17px;
 }
 .label-message {
   top: 15px;
@@ -555,8 +647,8 @@ font-size: 17px;
 }
 .submit {
   display: block;
-margin-left: 4px;
-margin-top: 28px;
+  margin-left: 4px;
+  margin-top: 28px;
 }
 button {
   color: #fff;
@@ -570,47 +662,49 @@ button {
 .feedback__form-send:focus,
 .feedback__form-send:active {
   background: #48CBE8;
-border-radius: 5px;
-border-bottom: 2px solid #3BA8C0;
-font-size: 19px;
-padding: 4px 19px;
+  border-radius: 5px;
+  border-bottom: 2px solid #3BA8C0;
+  font-size: 19px;
+  padding: 4px 19px;
 }
 .feedback__form-clear,
 .feedback__form-clear:hover,
 .feedback__form-clear:focus,
 .feedback__form-clear:active {
-background: #849DB5;
-border-radius: 5px;
-border-bottom: 2px solid #687B8F;
-font-size: 19px;
-padding: 8px 26px;
+  background: #849DB5;
+  border-radius: 5px;
+  border-bottom: 2px solid #687B8F;
+  font-size: 19px;
+  padding: 8px 26px;
 }
 /* ==========================================================================
 Форма входа
 ========================================================================== */
-.login{
-/*  margin-bottom: -78px;*/ 
+
+.login {
+  /*  margin-bottom: -78px;*/
   min-height: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
-.login:after{
+.login:after {
   content: "";
   display: block;
 }
-.footer-container__login, .login:after {
+.footer-container__login,
+.login:after {
   height: 78px;
 }
-.footer-container__login{
+.footer-container__login {
   background: #eff3f7;
 }
 /* ==========================================================================
 Helper classes
 ========================================================================== */
 
-.clearfix: before,
-.clearfix: after {
-  content:" ";
-  display:table;
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
 .clearfix:after {
   clear: both;
