@@ -313,11 +313,17 @@ h2 {
 }
 .footer-container {
   background: #eff3f7;
+  position: relative;
 }
 footer p {
   margin-top: 30px;
   text-align: center;
   font-size: 13px;
+}
+.login-link{
+  position:absolute;
+  top: 21px;
+  left: 298px;
 }
 /* ==========================================================================
 Главная страница
@@ -446,11 +452,9 @@ footer p {
   background: #818e9b;
 }
 .popup {
-  display:none;
   position: fixed;
   background: #fff;
   width: 362px;
-  height: 494px;
   top: 27%;
   left: 50%;
   margin: -100px 0 0 -100px;
@@ -460,6 +464,7 @@ footer p {
   -webkit-box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
   box-shadow: 0 6px 12.5px 0.5px rgba(13, 16, 7, 0.35);
   font-family: 'fira_sansbook';
+  display: none;
 }
 .close {
   display: block;
@@ -491,7 +496,11 @@ footer p {
 }
 .popup__form-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+}
+.image-item {
+  position: relative;
+  margin-bottom: 10px;
 }
 .popup__form-label {
   position: absolute;
@@ -500,12 +509,19 @@ footer p {
   left: 22px;
   color: #959AA8;
 }
+.image-label{
+  top: -12px;
+  position: absolute;
+font-size: 18px;
+left: 22px;
+color: #959AA8;
+}
 .popup__form-input {
   border: 1px solid #3ba8c0;
   border-radius: 4px;
   margin-left: 21px;
-  padding: 10px 0px 9px 0px;
-  width: 320px;
+  padding: 10px 0px 9px 5px;
+  width: 315px;
 }
 .form__img-btn {
   border: none;
@@ -522,6 +538,15 @@ footer p {
 }
 .form__img-input {
   width: 267px;
+}
+.popup__img-add {
+  position: relative;
+  display: block;
+  bottom: 35px;
+  border: none;
+  left: 293px;
+  width: 46px;
+  height: 32px;
 }
 .popup__form-textarea {
   margin-top: 0;
@@ -567,7 +592,7 @@ textarea {
   border-radius: 4px;
   margin-left: 1px;
   margin-top: 49px;
-  padding: 10px 0px 9px 0px;
+  padding: 10px 0px 9px 5px;
 }
 .label-top {
   position: absolute;
@@ -684,22 +709,72 @@ button {
 /* ==========================================================================
 Форма входа
 ========================================================================== */
-
-.login {
-  /*  margin-bottom: -78px;*/
+.login-wrapper{
   min-height: 100%;
-  margin: 0 auto;
+  margin-bottom: -78px;
+  padding-top: -3%;
 }
-.login:after {
+.login-wrapper:after{
   content: "";
   display: block;
 }
-.footer-container__login,
-.login:after {
-  height: 78px;
+.footer-container__login, .login-wrapper:after{
+  height:78px;
 }
-.footer-container__login {
+.login {
+  margin: auto;
+  width: 590px;
+  border-radius: 4px;
+  background-color: #eff3f7;
+  left: 33%;
+  top: 13%;
+  position: absolute;
+}
+.footer-container__login{
   background: #eff3f7;
+}
+.login__header{
+  font-size: 40px;
+  color: #fff;
+  border-bottom: 17px solid #67DFFA;
+  text-align: center;
+  padding: 26px 0px;
+  font-family: 'fira_sansbook';
+  font-weight: 300;
+  background: #3ba8c0;
+  margin-bottom: 10px;
+}
+.login__form-item{
+    position:relative;
+    margin-bottom: 10px;
+}
+.form__login-label{
+  
+  
+}
+.form__login-label, .form__login-pass{
+  color: #959AA8;
+  font-size: 36px;
+  font-weight: 300;
+  position:absolute;
+  left:238px;
+}
+.form__login-input{
+  margin-top:47px;
+  margin-left:100px;
+  width:422px;
+  padding: 15px 0px 15px 5px;
+  border: 1px solid #3ba8c0;
+  border-radius: 4px;
+}
+.form__login-submit{
+  background: #48CBE8;
+border-radius: 5px;
+border-bottom: 2px solid #3BA8C0;
+font-size: 19px;
+padding: 9px 33px;
+margin-left: 225px;
+margin-bottom: 23px;
 }
 /* ==========================================================================
 Helper classes
@@ -717,10 +792,3 @@ Helper classes
   *zoom: 1;
 }
 
-.popup__img-add {
-  position: relative;
-  display: block;
-  bottom: 33px;
-  border: none;
-  left: 294px;
-}
